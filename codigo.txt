@@ -1,0 +1,7 @@
+  FILE * arventas;
+arventas=fopen("regristros.txt", "w+");
+fwrite(&rclientes, sizeof(rclientes), 1, arventas);
+fclose(arventas);
+return 0;
+getch();
+}
